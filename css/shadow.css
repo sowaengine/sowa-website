@@ -1,0 +1,15 @@
+
+
+
+.text-shadow-1 {
+    text-shadow: 0px 5px 10px #4bf5ec,
+    -4px 3px 30px #39c0ff;
+}
+
+.shadow-1 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.shadow-2 {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

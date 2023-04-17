@@ -1,0 +1,17 @@
+.question::before {
+    content: 'Q:';
+    color: rgb(165, 33, 33);
+    font-size: 2rem;
+}
+.question {
+    font-weight: bold;
+}
+.answer {
+    font-size: 1.7rem;
+}
+
+.answer::before {
+    content: 'A:';
+    color: rgb(65, 134, 180);
+    font-size: 2rem;
+}

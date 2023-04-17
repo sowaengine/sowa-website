@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/static/icon.png">
+    <title> Sowa Engine | free and open source 2d game engine </title>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/icon.css">
+    <link rel="stylesheet" href="/css/shadow.css">
+    
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAV START -->
+    <nav>
+        <input type="checkbox" name="nav-open" id="nav-open">
+        <label for="nav-open" class="fas-icon"></label>
+        <div class="nav">
+            <a href="/" class="nav-btn"><i class="btn-left-icon fa-solid fa-house"></i> Sowa </a>
+            <a href="/about" class="nav-btn"><i class="btn-left-icon fa-solid fa-circle-question"></i> About</a>
+            <a href="/community" class="nav-btn"><i class="btn-left-icon fa-solid fa-users"></i> Community</a>
+            <span class="nav-spacer"></span>
+            <a href="/download" class="nav-btn"><i class="btn-left-icon fa-solid fa-download"></i> Download</a>
+            <a href="https://docs.sowaengine.com" target="_blank" rel="noopener noreferrer" class="nav-btn"><i class="btn-left-icon fa-solid fa-book"></i> Docs</a>
+        </div>
+    </nav>
+    <!-- NAV END -->
+    
+    <div id="home">
+        <div class="home-bg">
+            <video autoplay muted loop poster="/static/bg-poster.png">
+                <source src="/static/bg-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="row space-around w-100 h-100">
+            <div class="column center h-100" style="padding: 0 2rem;">
+                <h1 class="white text-shadow-1"> Sowa Engine </h1>
+                <h4 class="white text-shadow-1"> Sowa engine is a free and open source game engine </h4>
+                <a href="/download" class="download-btn">Download Latest</a>
+            </div>
+            
+            <div style="width: 40%; height: 100%;" class="column center cross-center only-desktop">
+                <img draggable="false" style="mix-blend-mode: multiply;" width="40%" src="/static/icon.png" alt="">
+                <h3 class="white">Sowa Engine</h3>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="gallery">
+        <div class="page">
+            <h2 class="text-center page-header white"> Made with Sowa </h2>
+            
+            <div class="row wrap">
+                <a href="#game1" class="no-deco gallery-card">
+                    <img draggable="false" src="/static/bg-poster.png" alt="">
+                    <h3 class="text-center"> Game1 </h3>
+                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </a>
+                <a href="#game2" class="no-deco gallery-card">
+                    <img draggable="false" src="/static/bg-poster.png" alt="">
+                    <h3 class="text-center"> Game2 </h3>
+                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </a>
+                <a href="#game3" class="no-deco gallery-card">
+                    <img draggable="false" src="/static/bg-poster.png" alt="">
+                    <h3 class="text-center"> Game3 </h3>
+                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </a>
+                <a href="#longgame" class="no-deco gallery-card">
+                    <img draggable="false" src="/static/bg-poster.png" alt="">
+                    <h3 class="text-center"> Long game name </h3>
+                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </a>
+                <a href="#longlonggame" class="no-deco gallery-card">
+                    <img draggable="false" src="/static/bg-poster.png" alt="">
+                    <h3 class="text-center"> Long long game name long long </h3>
+                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER START -->
+    <footer class="column flex-fixed space-evenly white">
+        <div class="row flex-fixed">
+            <p> 2021-2023 Lexographics </p>
+            <p> Get Sowa </p>
+            <p> Contact </p>
+        </div>
+        <div class="row flex-fixed">
+            <span></span>
+            <a href="/download" class="text-disabled text-center"> Download</a>
+            <div class="row">
+                <a href="https://github.com/sowaengine/sowa" target="_blank" rel="noopener noreferrer" class="no-deco"><i class="fa-brands fa-github white icon-medium icon-padding-medium"></i></a>
+                <a href="https://discord.gg/HP7SDFU2Ep" target="_blank" rel="noopener noreferrer" class="no-deco"><i class="fa-brands fa-discord white icon-medium icon-padding-medium"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+</html>

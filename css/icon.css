@@ -1,0 +1,17 @@
+.btn-left-icon {
+    margin-right: 0.2rem;
+}
+
+.fas-icon {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-medium {
+    font-size: 2rem;
+}
+
+.icon-padding-medium {
+    padding: 0.5rem;
+}

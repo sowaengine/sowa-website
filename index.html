@@ -1,140 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/static/icon.png">
-    <title> Sowa Engine | free and open source 2d game engine </title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="./favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+		<link href="./_app/immutable/assets/0.852fe616.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.541ba0f8.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Button.3dce505a.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.742cb7c7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.adc5b47a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.aab362a5.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.682f17b7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.e4c0b51f.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.634a9079.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.15ae1b88.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.6d15c04d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Button.a28d5aea.js"><title>Sowa Engine | Free and open source 2d game engine</title><!-- HEAD_svelte-1aypsg9_START --><!-- HEAD_svelte-1aypsg9_END -->
 
-    <link rel="stylesheet" href="/css/all.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/icon.css">
-    <link rel="stylesheet" href="/css/shadow.css">
-    
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/gallery.css">
+	<meta property="og:title" content="Sowa Engine">
+	<meta property="og:site_name" content="Sowa Engine">
+	<meta property="og:url" content="https://sowaengine.com">
+	<meta property="og:description" content="Sowa engine - Free and open source, MIT Licensed 2D game engine">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://sowaengine.com/banner.png">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="sowaengine.com">
+	<meta property="twitter:url" content="https://sowaengine.com">
+	<meta name="twitter:title" content="Sowa Engine">
+	<meta name="twitter:description" content="Sowa Engine - Free and open source, MIT Licensed 2D game engine">
+	<meta name="twitter:image" content="https://sowaengine.com/banner.png">
 
-    <meta property="og:title" content="Sowa Engine">
-    <meta property="og:site_name" content="Sowa Engine">
-    <meta property="og:url" content="sowaengine.com">
-    <meta property="og:description" content="Sowa engine - Free and open source, MIT Licensed 2D game engine">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sowaengine.com/static/banner.png">
+	<link rel="canonical" href="https://sowaengine.com" />
+	<meta name="description" content="Sowa engine is an open source, MIT Licensed 2d game engine">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="sowaengine.com">
-    <meta property="twitter:url" content="https://sowaengine.com">
-    <meta name="twitter:title" content="Sowa Engine">
-    <meta name="twitter:description" content="Sowa Engine - Free and open source, MIT Licensed 2D game engine">
-    <meta name="twitter:image" content="https://sowaengine.com/static/banner.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FMDK1CPCN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-    <link rel="canonical" href="https://sowaengine.com"/>
-    <meta name="description" content="Sowa engine is an open source, MIT Licensed 2d game engine">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FMDK1CPCN"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-3FMDK1CPCN');
-    </script>
+		gtag('config', 'G-3FMDK1CPCN');
+	</script>
 </head>
-<body>
-    <!-- NAV START -->
-    <nav>
-        <input type="checkbox" name="nav-open" id="nav-open">
-        <label for="nav-open" class="fas-icon"></label>
-        <div class="nav">
-            <a href="/" class="nav-btn"><i class="btn-left-icon fa-solid fa-house"></i> Sowa </a>
-            <a href="/about" class="nav-btn"><i class="btn-left-icon fa-solid fa-circle-question"></i> About</a>
-            <a href="/community" class="nav-btn"><i class="btn-left-icon fa-solid fa-users"></i> Community</a>
-            <span class="nav-spacer"></span>
-            <a href="/download" class="nav-btn"><i class="btn-left-icon fa-solid fa-download"></i> Download</a>
-            <a href="https://docs.sowaengine.com" target="_blank" rel="noopener noreferrer" class="nav-btn"><i class="btn-left-icon fa-solid fa-book"></i> Docs</a>
-        </div>
-    </nav>
-    <!-- NAV END -->
-    
-    <div id="home">
-        <div class="home-bg">
-            <video autoplay muted loop poster="/static/bg-poster.png">
-                <source src="/static/bg-video.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="row space-around w-100 h-100">
-            <div class="column center h-100" style="padding: 0 2rem;">
-                <h1 class="white text-shadow-1"> Sowa Engine </h1>
-                <h4 class="white text-shadow-1"> Sowa engine is a free and open source game engine </h4>
-                <a href="/download" class="download-btn">Download Latest</a>
-            </div>
-            
-            <div style="width: 40%; height: 100%;" class="column center cross-center only-desktop">
-                <img alt="sowa engine icon" draggable="false" style="mix-blend-mode: multiply;" width="40%" src="/static/icon.png" alt="">
-                <h3 class="white">Sowa Engine</h3>
-            </div>
-        </div>
-    </div>
-    
 
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">   <div class="progress-container svelte-1c8m2ya" style="--scroll-progress: 0%;"><div class="progress-bar" id="myBar"></div></div> <nav class="nav svelte-1c8m2ya"><div class="left svelte-1c8m2ya"> <a target="_self" class="item svelte-hxwli" href="javascript:;"><div class="btn svelte-hxwli"> <img src="/icon.png" class="img svelte-1c8m2ya" alt=""> Sowa Engine</div> </a>  <a target="_self" class="item svelte-hxwli" href="javascript:;"><div class="btn svelte-hxwli"><i class="icon fa-regular fa-circle-question svelte-hxwli"></i> About</div> </a></div> <div class="right svelte-1c8m2ya"> <a target="_blank" class="item svelte-hxwli" href="javascript:;"><div class="btn svelte-hxwli"><i class="icon fa-solid fa-book svelte-hxwli"></i> Docs</div> </a>  <a target="_self" class="item svelte-hxwli" href="javascript:;"><div class="btn svelte-hxwli"><i class="icon fa-solid fa-download svelte-hxwli"></i> Download</div> </a>  <a target="_self" class="item svelte-hxwli" href="javascript:;"><div class="btn svelte-hxwli"><i class="icon fa-solid fa-pencil svelte-hxwli"></i> Editor</div> </a>  <a target="_self" class="item svelte-hxwli" href="javascript:;"><div class="btn svelte-hxwli"><i class="icon fa-solid fa-right-to-bracket svelte-hxwli"></i> Login</div> </a></div> </nav> <div style="min-height: 4rem;"></div> <div style="overflow: hidden;"><div>  <div id="landing" class="svelte-1h3ynjn"><div style="display: flex; width: calc(80% - 4rem); height: 100%; align-items: center; flex-wrap: wrap; padding: 0 2rem; justify-content: center;" class="svelte-1h3ynjn"><div style="display: flex; justify-content: center;"><div><h1 style="font-size: 4rem; line-height: 1.2;" data-svelte-h="svelte-1m77cfk">Sowa Engine</h1> <h2 style="font-size: 2rem; line-height: 1.2;" data-svelte-h="svelte-9f8bff">A free and open source game engine</h2> <br> <a class="btn svelte-1u030mc" href="/download"><span class="btn-left svelte-1u030mc"><i class="fa-solid fa-download"></i> Download</span> <span class="btn-right svelte-1u030mc">0.1.1</span> </a></div></div> </div> <div id="landing-img" style="--scroll: 0px;" class="svelte-1h3ynjn"></div></div> <div style="padding: 4rem; background-color: var(--bg-color);" id="about" data-svelte-h="svelte-11ik70e"><br> <div style="display: flex; gap: 2rem; align-items: center;"><img class="img-shadow svelte-1h3ynjn" src="/bg.png" alt="" style="width: 50%;"> <div><h2 style="font-size: 2rem;">About Sowa Engine</h2> <br> <p style="font-size: 1.2rem; font-weight: 500; color: #cdcdcd; width: 80%;">Sowa Engine is an open source 2d game engine. It&#39;s currently in active
+        development. You can check out development progress of it in our
+        <a target="_blank" href="https://discord.gg/HP7SDFU2Ep">Discord server</a></p></div></div></div> <div style="padding: 4rem; background-color: var(--bg-color);" data-svelte-h="svelte-1s69dgt"><div style="display: flex; gap: 2rem; align-items: center;"><div><h2 style="font-size: 2rem;">Easy to use</h2> <br> <p style="font-size: 1.2rem; font-weight: 500; color: #cdcdcd; width: 80%;">Sowa Engine is designed to be simple to use and understand. It takes
+        inspiration from <a target="_blank" href="https://godotengine.org">Godot Engine</a></p></div> <img class="img-shadow svelte-1h3ynjn" src="/ss1.png" alt="" style="width: 50%;"></div> </div></div></div> <div style="margin-top: 2rem; min-height: 200px; background-color: var(--footer-color); display: flex; justify-content: space-evenly; align-items: start; padding: 2rem max(1vw, 2rem); flex-wrap: wrap; gap: 2rem;" data-svelte-h="svelte-1nqrfp7"><div style="display: flex; align-items: center; gap: 1rem;"><img src="/icon.png" alt="" style="height: 4rem;"> <p class="brand svelte-1mabfhd">Sowa Engine</p></div> <div style="text-align: center; line-height: 1.5;"><h2 class="header svelte-1mabfhd">Navigation</h2> <a class="link svelte-1mabfhd" href="/#about">About</a> <br> <a class="link svelte-1mabfhd" target="_blank" href="https://docs.sowaengine.com">Docs</a> <br> <a class="link svelte-1mabfhd" href="/download">Download</a></div> <div style="text-align: center; line-height: 1.5;"><h2 class="header svelte-1mabfhd">Contact</h2> <div style="display: flex; gap: 1rem;"><a class="link svelte-1mabfhd" target="_blank" href="https://discord.gg/HP7SDFU2Ep"><i style="font-size: 2rem;" class="fa-brands fa-discord"></i></a> <a class="link svelte-1mabfhd" target="_blank" href="https://github.com/sowaengine/sowa"><i style="font-size: 2rem;" class="fa-brands fa-github"></i></a></div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_mkh3i2 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-    <div id="gallery">
-        <div class="page">
-            <h2 class="text-center page-header white"> Made with Sowa </h2>
-            
-            <div class="row wrap">
-                <a href="#game1" class="no-deco gallery-card">
-                    <img alt="preview of game1" draggable="false" src="/static/bg-poster.png" alt="">
-                    <h3 class="text-center"> Game1 </h3>
-                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </a>
-                <a href="#game2" class="no-deco gallery-card">
-                    <img alt="preview of game2" draggable="false" src="/static/bg-poster.png" alt="">
-                    <h3 class="text-center"> Game2 </h3>
-                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </a>
-                <a href="#game3" class="no-deco gallery-card">
-                    <img alt="preview of game3" draggable="false" src="/static/bg-poster.png" alt="">
-                    <h3 class="text-center"> Game3 </h3>
-                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </a>
-                <a href="#longgame" class="no-deco gallery-card">
-                    <img alt="preview of long game" draggable="false" src="/static/bg-poster.png" alt="">
-                    <h3 class="text-center"> Long game name </h3>
-                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </a>
-                <a href="#longlonggame" class="no-deco gallery-card">
-                    <img alt="preview of long long game" draggable="false" src="/static/bg-poster.png" alt="">
-                    <h3 class="text-center"> Long long game name long long </h3>
-                    <p class="text-center text-wrap"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </a>
-            </div>
-        </div>
-    </div>
+					const element = document.currentScript.parentElement;
 
+					const data = [null,null];
 
-    <!-- FOOTER START -->
-    <footer class="column flex-fixed space-evenly white">
-        <div class="row flex-fixed">
-            <p> 2021-2023 Lexographics </p>
-            <p> Get Sowa </p>
-            <p> Contact </p>
-        </div>
-        <div class="row flex-fixed">
-            <span></span>
-            <a href="/download" class="text-disabled text-center"> Download</a>
-            <div class="row">
-                <a href="https://github.com/sowaengine/sowa" target="_blank" rel="noopener noreferrer" class="no-deco"><i class="fa-brands fa-github white icon-medium icon-padding-medium"></i></a>
-                <a href="https://discord.gg/HP7SDFU2Ep" target="_blank" rel="noopener noreferrer" class="no-deco"><i class="fa-brands fa-discord white icon-medium icon-padding-medium"></i></a>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER END -->
+					Promise.all([
+						import("./_app/immutable/entry/start.742cb7c7.js"),
+						import("./_app/immutable/entry/app.682f17b7.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
 </body>
+
 </html>
